@@ -34,9 +34,10 @@ div {
     font-weight: 600;
     height: 50px;
     width: 50px;
-    padding: 7px 1px 1px 8px;
+    padding: 7px 8px 1px 8px;
     background-color: rgb(211, 207, 207);
     border: 1px solid black;
+    text-align: end;
 }
 
 input {

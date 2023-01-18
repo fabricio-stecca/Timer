@@ -23,6 +23,7 @@ function clicar(){
         var minutos = document.getElementById(`minutos`)
         var horas = document.getElementById(`horas`)
 
+
         
         if(y == 59 & x == 59 && w == 99) {
             
@@ -34,9 +35,16 @@ function clicar(){
             w = w + 1
             z = z + 1
 
+
+            if(z < 10) {
+                horas.innerHTML = `0` + z
+            } else {
+                horas.innerHTML =  z
+            }
+
             milisegundos.innerHTML = w
-            segundos.innerHTML = x
-            minutos.innerHTML = y
+            segundos.innerHTML = `0` + x
+            minutos.innerHTML = `0` + y
             horas.innerHTML = z
 
         } else {
@@ -49,9 +57,14 @@ function clicar(){
             w = w + 1
             y = y + 1
 
+            if(y < 10) {
+                minutos.innerHTML = `0` + y
+            } else {
+                minutos.innerHTML =  y
+            }
+
             milisegundos.innerHTML = w
-            segundos.innerHTML = x
-            minutos.innerHTML = y
+            segundos.innerHTML = `0` + x
 
         } else {
 
@@ -62,8 +75,14 @@ function clicar(){
             x = x + 1
             w = w + 1
 
+            if(x < 10) {
+                segundos.innerHTML = `0` + x
+            } else {
+                segundos.innerHTML =  x
+            }
+
             milisegundos.innerHTML = w
-            segundos.innerHTML = x
+            
         } 
 
         w = w + 1
